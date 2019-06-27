@@ -2,7 +2,7 @@
     "name": "larrymckuydee/artisan-command-extra",
     "type": "library",
     "description": "Provide more commands for more wholesome artisan experience",
-    "keywords": ["laravel", "artisan", "commands", "command", "db:create"],
+    "keywords": ["laravel", "artisan", "commands", "command", "migrations"],
     "homepage": "https://github.com/LarryMckuydee",
     "authors": [{
         "name": "Larry Mckuydee",
