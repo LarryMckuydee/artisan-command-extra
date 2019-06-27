@@ -8,7 +8,7 @@ Basically, it just extends from laravel Command class
 Install via composer
 `composer require larrymckuydee/artisan-command-extra`
 
-Include into `app/Console/Kernel.php
+Include into `app/Console/Kernel.php`
 
 ### Database Migrations
 
@@ -24,7 +24,7 @@ class Kernel extends ConsoleKernel
         Migrations\CreateCommand::class,
 	Migrations\DropCommand::class
     ];
-
+...
 }
 
 ```
