@@ -1,0 +1,23 @@
+{
+    "name": "larrymckuydee/artisan-command-extra",
+    "type": "library",
+    "description": "Provide more commands for more wholesome artisan experience",
+    "keywords": ["laravel", "artisan", "commands", "command", "db:create"],
+    "homepage": "https://github.com/LarryMckuydee",
+    "authors": [{
+        "name": "Larry Mckuydee",
+        "email": "larry.mckuydee@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1.3",
+        "doctrine/dbal": "^2.9",
+        "laravel/framework": "5.8.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArtisanCommandExtra\\": "app/"
+        }
+    }
+
+}
