@@ -41,7 +41,7 @@ class MakeCommand extends Command {
             'index.blade.php',
             'edit.blade.php',
             'show.blade.php',
-            'new.blade.php',
+            'create.blade.php',
             '_form.blade.php'
         );
 
