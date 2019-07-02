@@ -3,6 +3,7 @@
 namespace ArtisanCommandExtra\Console\Views;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Str;
 
 class MakeCommand extends Command {
 
@@ -35,7 +36,8 @@ class MakeCommand extends Command {
 
     public function createViews()
     {
-        $modelName = $this->argument('model');
+	$modelName = $this->argument('model');
+        $pluralizedModelName = Str::snake(Str::pluralStudly($modelName));
         $viewsPath = $this->views_path();
         $resourceFiles = array(
             'index.blade.php',
@@ -47,8 +49,8 @@ class MakeCommand extends Command {
 
         foreach($resourceFiles as $resourceFile)
         {
-            $fullPath = $viewsPath.$modelName.'/'.$resourceFile;
-            $resourceDir = $viewsPath.$modelName;
+            $fullPath = $viewsPath.$pluralizedModelName.'/'.$resourceFile;
+            $resourceDir = $viewsPath.$pluralizedModelName;
 
             if (file_exists($fullPath)) {
                 // ask if want to create 

@@ -3,6 +3,7 @@
 namespace ArtisanCommandExtra\Console\Views;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Str;
 
 class DeleteCommand extends Command {
 
@@ -36,8 +37,9 @@ class DeleteCommand extends Command {
     public function deleteViews()
     {
         $modelName = $this->argument('model');
+        $pluralizedModelName = Str::snake(Str::pluralStudly($modelName));
         $viewsPath = $this->views_path();
-        $resourceDir = $viewsPath.$modelName;
+        $resourceDir = $viewsPath.$pluralizedModelName;
 
         if (is_dir($resourceDir)) {
            $this->recursivelyRemove($resourceDir); 
