@@ -15,7 +15,7 @@ class DeleteCommand extends Command {
     /**
      * @var string The artisan command description
      */
-     protected $description = 'Create view files for model';
+     protected $description = 'Delete view files for model';
 
     /**
      * @var string The artisan command signature
