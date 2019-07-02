@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Views;
+namespace ArtisanCommandExtra\Console\Views;
 
 use Illuminate\Console\Command;
 
