@@ -9,6 +9,8 @@ class MakeCommand extends Command {
 
 
     /**
+     * Test specific version here if it trigger update
+     * for packagist
      * @var string The artisan command name.
      */
      protected $name = 'generate:views {model}';
