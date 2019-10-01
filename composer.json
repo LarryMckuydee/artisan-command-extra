@@ -11,8 +11,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": "^7.2",
-        "doctrine/dbal": "^2.9",
-        "laravel/framework": "6.0.*"
+        "doctrine/dbal": "^2.9"
     },
     "autoload": {
         "psr-4": {
